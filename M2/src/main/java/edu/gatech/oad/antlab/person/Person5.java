@@ -34,8 +34,9 @@ public class Person5 {
 	    int len = input.length();
 		String newStr = "";
 		for (int i = 0; i < len; i++) {
-			if(i>=len) { i -= len; }
-			char letter = input.charAt(i + 2);
+			int j = i;
+			if(j>=len-2) { j -= len; }
+			char letter = input.charAt(j + 2);
 			newStr = newStr + letter;
 		}
 		return newStr;
