@@ -1,5 +1,7 @@
 package edu.gatech.oad.antlab.person;
 
+import java.lang.System;
+
 /**
  *  A simple class for person 1
  *  returns their name and a
@@ -30,8 +32,14 @@ public class Person1 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-	  //Person 1 put your implementation here
-	  return null;
+
+        String last = input.substring(input.length() - 3);
+        for (int i = 2; i < input.length(); i++) {
+            input[i] = input[i-2];
+        }
+        input[0] = last[0];
+        input[1] = last[1];
+	    return input;
 	}
 	
 	/**
@@ -45,5 +53,6 @@ public class Person1 {
 	public String toString(String input) {
 	  return name + calc(input);
 	}
+
 
 }
