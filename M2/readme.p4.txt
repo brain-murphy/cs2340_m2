@@ -1,3 +1,3 @@
 Abhishek Sen
-asen33@gatech.edu
+asen33
 Will attempt all possible extra credit!
