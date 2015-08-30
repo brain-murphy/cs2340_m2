@@ -34,12 +34,13 @@ public class Person1 {
 	private String calc(String input) {
 
         String last = input.substring(input.length() - 3);
+
+        String newString = "";
         for (int i = 2; i < input.length(); i++) {
-            input[i] = input[i-2];
+            newString += input.charAt(i-2);
         }
-        input[0] = last[0];
-        input[1] = last[1];
-	    return input;
+
+	    return last + input.substring(2);
 	}
 	
 	/**
