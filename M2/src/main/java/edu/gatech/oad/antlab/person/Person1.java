@@ -33,14 +33,9 @@ public class Person1 {
 	 */
 	private String calc(String input) {
 
-        String last = input.substring(input.length() - 3);
+        String first = input.substring(0, 2);
 
-        String newString = "";
-        for (int i = 2; i < input.length(); i++) {
-            newString += input.charAt(i-2);
-        }
-
-	    return last + input.substring(2);
+	    return input.substring(2) + first;
 	}
 	
 	/**
