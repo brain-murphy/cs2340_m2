@@ -32,7 +32,12 @@ public class Person5 {
 	private String calc(String input) {
 	  //Person 5 put your implementation here
 	    int len = input.length();
-		String newStr = input + " blah blah";
+		String newStr = "";
+		for (int i = 0; i < len; i++) {
+			if(i>=len) { i -= len; }
+			char letter = input.charAt(i + 2);
+			newStr = newStr + letter;
+		}
 		return newStr;
 	}
 	
