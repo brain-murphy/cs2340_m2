@@ -1,5 +1,15 @@
+
 apply plugin: 'java'
 
+
+sourceCompatibility = 1.8
+version = '1.0'
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'Gradle Test',
+                'Implementation-Version': version
+    }
+}
 
 dependencies {
     compile group: 'commons-collections', name: 'commons-collections', version: '3.2'
