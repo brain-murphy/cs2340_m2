@@ -49,8 +49,8 @@ public class Person2 {
 		}
 		Collections.shuffle(chars);
 		String output = "";
-		for (int i = 0; i < newString.length; i++) {
-			output += newString[i];
+		for (int i = 0; i < chars.size(); i++) {
+			output += chars.get(i);
 		}
 		return output;
 	}
