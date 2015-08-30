@@ -31,7 +31,9 @@ public class Person5 {
 	 */
 	private String calc(String input) {
 	  //Person 5 put your implementation here
-	  return null;
+	    int len = input.length();
+		String newStr = input + " blah blah";
+		return newStr;
 	}
 	
 	/**
