@@ -12,7 +12,7 @@ import java.util.Random;
  *  returns their name and a
  *  modified string 
  *
- * @author Connor Schembor
+ * @author Bob
  * @version 1.1
  */
 public class Person2 {
