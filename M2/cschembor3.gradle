@@ -1,0 +1,11 @@
+defaultTasks 'hello'
+
+apply plugin: 'java'
+
+task hello {
+    println 'Hello World'
+}
+
+repositories {
+    mavenCentral()
+}
