@@ -1,9 +1,19 @@
-defaultTasks 'hello'
+//defaultTasks 'hello'
 
 apply plugin: 'java'
 
-task hello {
-    println 'Hello World'
+//task hello {
+//    println 'Hello World'
+//}
+
+sourceCompatibility = 1.8
+
+jar {
+
+}
+
+dependencies {
+    compile
 }
 
 repositories {
