@@ -42,7 +42,12 @@ public class Person3 {
 	 * @return the reversed string
 	 */
 	private String calc(String input) {
+		String newString = "";
+        for (int i = 0; i < input.length(); i++){
+            char c = input.charAt(i);
+            newString = c + newString;
+        }
 	  //Person 3 put your implementation here
-	  return null;
+	  return newString;
 	}
 }
