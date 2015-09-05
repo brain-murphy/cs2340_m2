@@ -31,13 +31,13 @@ public class Person5 {
 	 */
 	private String calc(String input) {
 	  //Person 5 put your implementation here
-	    int len = input.length();
 		String newStr = "";
-		for (int i = 0; i < len; i++) {
-			int j = i;
-			if(j>=len-2) { j -= len; }
-			char letter = input.charAt(j + 2);
-			newStr = newStr + letter;
+		for(int i = 0; i < input.length(); i++) {
+			char character = input.charAt(i);
+			int ascii = (int) character;
+			ascii += 1;
+			character = (char) ascii;
+			newStr += character;
 		}
 		return newStr;
 	}
