@@ -1,9 +1,25 @@
-defaultTasks 'hello'
+//defaultTasks 'hello'
 
 apply plugin: 'java'
+version = '1.2'
+//task hello {
+//    println 'Hello World'
+//}
 
-task hello {
-    println 'Hello World'
+jar {
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+
+    manifest {
+        attributes 'Implementation-Title': 'M2',
+                'Implementation-Version': version,
+                'Main-Class' : 'edu.gatech.oad.antlab.pkg1.AntLabMain'
+
+    }
+}
+
+dependencies {
+    compile files('lib/resources.jar')
+    testCompile group: 'junit', name: 'junit', version: '4.+'
 }
 
 repositories {
