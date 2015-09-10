@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ProjectModuleManager">
-    <modules>
-<<<<<<< HEAD
-      <module fileurl="file://$PROJECT_DIR$/M2/src/main/main.iml" filepath="$PROJECT_DIR$/M2/src/main/main.iml" />
-=======
-      <module fileurl="file://$PROJECT_DIR$/.idea/cs2340_m2.iml" filepath="$PROJECT_DIR$/.idea/cs2340_m2.iml" />
->>>>>>> FETCH_HEAD
-    </modules>
+    <modules />
   </component>
 </project>
